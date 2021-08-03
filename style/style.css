@@ -114,12 +114,17 @@ nav#gnb {
   border: 1px solid #000;
 }
 
+#gnb ul {
+  justify-content: center;
+  align-items: center;
+}
+
 #gnb ul a {
   color: #fff;
   font-size: 17px;
   /* font-weight: bold; */
   text-align: center;
-  padding: 8px 17px;
+  padding: 8px 19px;
   background-color: #383735;
   display: inline-block;
 }
@@ -132,4 +137,22 @@ nav#gnb {
   background-color: #3793c4;
 }
 
+#gnb li:last-child {
+  height: 28px;
+  /* border: 1px solid #000; */
+}
+
+#gnb li:last-child a {
+  width: 110px;
+  height: 28px;
+  font-size: 11px;
+  line-height: 28px;
+  padding: 0;
+  background-color: #f7941d;
+}
+
+#gnb li:last-child a span {
+  color: #fff;
+  /* display: block; */
+}
 /* nav#gnb 끝 */

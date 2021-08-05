@@ -3,10 +3,10 @@
 
 /* 가이드라인 시작 */
 div#wrap {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 #wrap > #header {
-  border: 1px solid #08f;
+  /* border: 1px solid #08f; */
 }
 /* #header > * {
   border: 1px solid #000;
@@ -17,7 +17,7 @@ div#wrap {
 div#wrap {
   width: 1140px;
   padding: 0 10px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   margin: 0 auto;
 }
 /* div#wrap 끝 */
@@ -113,7 +113,7 @@ header#header > div#searchArea > * {
 /* nav#gnb 시작 */
 nav#gnb {
   padding: 4px 0;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 #gnb ul {
@@ -182,13 +182,14 @@ nav#gnb {
 /* main#main 시작 */
 main#main {
   padding: 10px;
-
+  margin-bottom: 30px;
   justify-content: space-around;
 }
 
 /* div#mainLnbArea 시작 */
 #main div#mainLnbArea {
   width: 156px;
+  height: 270px;
   padding: 10px 24px;
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -305,6 +306,7 @@ div#loginArea {
   border: 1px solid #aaa;
   border-radius: 2px;
   margin-left: 4px;
+  cursor: pointer;
   background-color: #aaa;
   transform: translateY(2px);
 }
@@ -314,6 +316,11 @@ div#loginArea {
 div#memberLink table {
   margin: 28px 0;
 }
+
+#memberLink table tr {
+  cursor: pointer;
+}
+
 div#memberLink table td {
   padding: 10px 4px 10px 0;
 }
@@ -342,18 +349,89 @@ footer#contentsFooter {
 hr#footerLine {
   border: none;
   border-top: 4px solid #444;
+  margin: 0 80px 0 40px;
 }
 
 footer#footer {
   justify-content: space-around;
+  margin: 0 80px 0 40px;
+  margin-bottom: 80px;
 }
 
 #footer div.footerItem {
   padding: 0 10px;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 #footer div.footerItem h4 {
   margin: 8px 0;
 }
+
+/* contactUs 시작 */
+div#contactUs > p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+div#contactUs > p:not(:first-child) {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* contactUs 끝 */
+
+/* bankingInfo 시작 */
+div#bankingInfo > p:first-child {
+  font-size: 14px;
+}
+div#bankingInfo > p:first-child span {
+  color: #01559d;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 14px;
+  display: inline-block;
+  transform: scaleX(1.5) translate(4px, 1px);
+}
+div#bankingInfo > p:nth-child(2) {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 16px;
+}
+div#bankingInfo > p:last-child {
+  font-size: 14px;
+}
+/* bankingInfo 끝 */
+
+/* delivery 시작 */
+div#delivery b {
+  font-size: 14px;
+  line-height: 30px;
+}
+div#delivery > p:nth-child(2) {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 5px; /* 글자간격 떨어트리기 */
+  margin: 12px 0;
+}
+div#delivery > p#refundAddr {
+  margin-top: 6px;
+}
+div#delivery > p#refundAddrOld {
+  text-align: right;
+  padding-right: 8px;
+}
+div#delivery > p.refund {
+  font-size: 14px;
+}
+/* delivery 끝 */
+
+/* community 시작 */
+div#community {
+  margin-top: 20px;
+}
+div#community a {
+  font-size: 14px;
+  line-height: 22px;
+}
+/* community 끝 */
+
 /* footer#footer 끝 */
